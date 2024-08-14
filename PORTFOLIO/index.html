@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>portfolio/biplovkarki</title>
+    <style>
+        body{
+          margin:0;
+        }
+        
+     nav{
+        background: black;
+    color: white;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+     }
+     ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    color:white;
+    float: left; 
+    margin-right: 20px; 
+    border:2px red none;
+    border-radius:30px;
+    background-color: rgb(12, 12, 12);
+}
+
+li a {
+    
+    display: block;
+    padding: 8px;
+    text-decoration: none; 
+    color: #e7e1e1;
+}
+li:hover{
+    
+    background-color:rgb(195, 219, 9);
+}
+.first{
+    border:2px red none;
+    padding:50px;
+    background-color: aquamarine;
+    
+    
+
+}
+.first img{
+   
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    border: 2px red none;
+  margin-left:41%;
+  
+}
+.first img:hover{
+    transform: scale(1.2);
+}
+.text{
+    margin-left: 35%;
+}
+.text h3{
+    margin-left:65px;
+    font-size: 40px;
+}
+.text p{
+   font-size: 30px;
+   letter-spacing: 3px;
+   margin-left:-45px;
+}
+
+
+.portfolio-items{
+    display: flex;
+    flex-flow:wrap;
+    gap:10px;
+    justify-content: center;
+   
+   
+}
+.portfolio-items img{
+    width:32%;
+    
+}
+.portfolio-items img:hover{
+    filter: brightness(0.4);
+    transition:cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s ;
+}
+#heading ,#line{
+    text-align: center;
+}
+
+#line{
+    font-size: larger;
+    font-display:bold;
+    font-weight: bolder;
+}
+.about{
+   margin-top:40px;
+   
+    border:2px rgb(48, 106, 106) solid;
+}
+.textme{ 
+    display: inline-flex;
+   justify-content: center;
+   width: 100%;
+
+}
+/* Mobile devices (portrait) */
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    li {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .first img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .text h3 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 20px;
+    }
+
+    .portfolio-items img {
+        width: 100%;
+    }
+
+    .about {
+        padding: 10px;
+    }
+
+    .textme p {
+        font-size: 14px;
+    }
+}
+
+/* Tablets (portrait and landscape) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        margin-right: 15px;
+    }
+
+    .first img {
+        height: 180px;
+        width: 180px;
+    }
+
+    .text h3 {
+        font-size: 35px;
+    }
+
+    .text p {
+        font-size: 25px;
+    }
+
+    .portfolio-items img {
+        width: 45%;
+    }
+}
+
+
+</style>
+    
+</head>
+<body>
+   
+        <nav>
+            <p >PORTFOLIO</p>
+          <ul>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <main>
+            <section class="first">
+                <img src="../profile.jfif" alt="">
+                <div class="text">
+                    <h3> Hello There!!</h3>
+                    <p>Welcome to my portfolio website</p>
+                </div>
+            </section>
+            <section class="second">
+                <h1 id="heading">Portfolio</h1>
+               <P id="line">____ <i class="fa fa-star" aria-hidden="true"></i>____</P>
+               <div class="portfolio-items">
+                <img src="../bike.jfif" alt="bike">
+                <img src="../bike.jfif" alt="bike">
+                <img src="../bike.jfif" alt="bike">
+                <img src="../bike.jfif" alt="bike">
+                <img src="../bike.jfif" alt="bike">
+                <img src="../bike.jfif" alt="bike">
+               </div>
+            </section>
+            <section class="about">
+                <div class="textme">
+                <p>Hello! I’m Jane Doe, a passionate graphic designer and illustrator based in San Francisco. With over 5 years of experience in the creative industry, I specialize in creating visually stunning graphics and illustrations that captivate audiences and bring ideas to life.</p>
+            <p>When I’m not working on design projects, you can find me exploring new art galleries, hiking through the beautiful landscapes of California, or experimenting with new recipes in the kitchen. I’m always on the lookout for exciting collaborations and new challenges that push my creative boundaries. Feel free to check out my portfolio and reach out if you’re interested in working together!</p>
+        </div>
+         <button><i class="fa fa-download" aria-hidden="true"></i>Download cv</button>
+            </section>
+        </main>
+        <footer></footer>
+ 
+</body>
+</html>
