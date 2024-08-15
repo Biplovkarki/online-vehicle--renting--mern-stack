@@ -162,6 +162,7 @@ li:hover{
     }
 }
 
+
 /* Tablets (portrait and landscape) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     nav {
@@ -195,6 +196,28 @@ li:hover{
     }
 }
 
+.contact-section {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+#message, #name{
+    font-size: 40px;
+    margin-bottom:20px;
+}
+
+#message-in, #name-in{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    height:40px;
+    width:100%;
+}
+.contact-section h1{
+    font-size: 30px;
+    margin-right:4%;
+}
 
 </style>
     
@@ -230,14 +253,30 @@ li:hover{
                </div>
             </section>
             <section class="about">
+                <h1 style=" display:block; align-self:center; "> About Me</h1>
                 <div class="textme">
                 <p>Hello! I’m Jane Doe, a passionate graphic designer and illustrator based in San Francisco. With over 5 years of experience in the creative industry, I specialize in creating visually stunning graphics and illustrations that captivate audiences and bring ideas to life.</p>
             <p>When I’m not working on design projects, you can find me exploring new art galleries, hiking through the beautiful landscapes of California, or experimenting with new recipes in the kitchen. I’m always on the lookout for exciting collaborations and new challenges that push my creative boundaries. Feel free to check out my portfolio and reach out if you’re interested in working together!</p>
         </div>
-         <button><i class="fa fa-download" aria-hidden="true"></i>Download cv</button>
+         <button><i class="fa fa-download" aria-hidden="true" ><a href="./boy.jfif" download></a></i>Download cv</button>
+            </section>
+            <section class="contact-section">
+                <h1> contact me</h1>
+                <div class="form">
+                    <form action="" method="">
+                    <label for="name" id="name"> name:</label><br>
+                <input type="text" placeholder="name" name="name" id="name-in" required><br>
+                <label for="message" id="message"> Message:</label><br>
+                <textarea name="mesasge" id="message-in"></textarea>
+            </form>
+        </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="footer" style="text-align: center;">
+                <h3><i class="fa fa-copyright" aria-hidden="true"></i>copyright by biplov karki,2024</h3>
+            </div>
+        </footer>
  
 </body>
 </html>
